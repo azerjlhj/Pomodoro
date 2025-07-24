@@ -1,7 +1,11 @@
 
 body {
-    padding-left: 20rem;
-    padding-right: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
     text-align: center;
     color: white;
     font-family: 'Courier New', Courier, monospace;
@@ -37,4 +41,61 @@ button:hover {
 button:disabled {
     background-color: rgba(0, 0, 0, 0.2);
     cursor: not-allowed;
+}
+
+.mode-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.control-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Tablet and smaller screens */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 5rem; /* Smaller timer display */
+    }
+    
+    button {
+        padding: 8px 16px; /* Smaller buttons */
+        font-size: 14px;
+    }
+    
+    .mode-buttons, .control-buttons {
+        gap: 10px; /* Less spacing between buttons */
+    }
+    
+    body {
+        padding: 15px; /* Less body padding */
+    }
+}
+
+/* Mobile screens */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 3.5rem; /* Even smaller timer */
+    }
+    
+    button {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+    
+    .mode-buttons, .control-buttons {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 8px;
+    }
+    
+    .timer {
+        padding: 15px; /* Less timer container padding */
+    }
 }
