@@ -45,7 +45,7 @@ The Pomodoro Technique is a time management method that uses 25-minute focused w
 ## 📥 Installation
 
 ```bash
-git clone https://github.com/yourusername/pomodoro-timer.git
+git clone https://github.com/azerjlhj/pomodoro-timer.git
 cd pomodoro-timer
 open index.html
 ```
